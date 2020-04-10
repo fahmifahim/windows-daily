@@ -2,6 +2,23 @@
 - [Find Windows 10 Serial Number](https://github.com/fahmifahim/windows-daily/blob/master/windows.md#find-windows-10-serial-number)
 
 
+#### Hyper-V Guest OS stopped unexpectedly (停止中 suspended / shutting down all the time)
+```bat
+# 1. Execute cmd as Administrator
+
+# 2. Check the current vm process
+tasklist /FI "IMAGENAME eq vm*"
+
+IMAGENAME                     PID  SESSION          SESSION #   MEMORY USAGE
+========================= ======== ================ =========== ============
+vmms.exe                      5368 Services                   0     19,788 K
+vmcompute.exe                 6904 Services                   0      6,492 K
+vmwp.exe                     19104 Services                   0     15,296 K
+vmmem                        20200 Services                   0          N/A
+
+
+```
+
 #### Find Windows 10 Serial Number
 ```bash
 # command
