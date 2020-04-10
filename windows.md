@@ -4,7 +4,7 @@
 
 
 #### Hyper-V Guest OS stopped unexpectedly (停止中 suspended / shutting down all the time)
-```bat
+```bash
 # 1. Execute cmd as Administrator
 
 
