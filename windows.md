@@ -1,4 +1,5 @@
 #### Index
+- [Hyper-V Guest OS stopped unexpectedly (停止中 suspended / shutting down all the time)](https://github.com/fahmifahim/windows-daily/blob/master/windows.md#hyper-v-guest-os-stopped-unexpectedly-%E5%81%9C%E6%AD%A2%E4%B8%AD-suspended--shutting-down-all-the-time)
 - [Find Windows 10 Serial Number](https://github.com/fahmifahim/windows-daily/blob/master/windows.md#find-windows-10-serial-number)
 
 
