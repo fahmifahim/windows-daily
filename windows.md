@@ -6,8 +6,18 @@
 ```bat
 # 1. Execute cmd as Administrator
 
-# 2. Check the current vm process
-tasklist /FI "IMAGENAME eq vm*"
+
+# 2. Check the current vm process (in NORMAL condition without error vm)
+$ tasklist /FI "IMAGENAME eq vm*"
+
+IMAGENAME                     PID  SESSION          SESSION #   MEMORY USAGE
+========================= ======== ================ =========== ============
+vmms.exe                      5368 Services                   0     19,788 K
+vmcompute.exe                 6904 Services                   0      6,492 K
+
+
+# 3. Tasklist when one vm is hangout/suspended/shutting down all the time
+$ tasklist /FI "IMAGENAME eq vm*"
 
 IMAGENAME                     PID  SESSION          SESSION #   MEMORY USAGE
 ========================= ======== ================ =========== ============
@@ -17,6 +27,11 @@ vmwp.exe                     19104 Services                   0     15,296 K
 vmmem                        20200 Services                   0          N/A
 
 
+# 4. Kill with force the wmp.exe (process that hold the suspended guest os vm)
+$ taskkill /F /PID 19104
+
+
+# 5. Start the guest os as usual
 ```
 
 #### Find Windows 10 Serial Number
